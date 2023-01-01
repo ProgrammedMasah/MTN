@@ -1,0 +1,21 @@
+.form-control:hover{
+    background-color: var(--bs-dark);
+    color: white;
+}
+
+.form-select:hover{
+    background-color: var(--bs-dark);
+    color: white;
+}
+.fw-md{
+    font-weight:bold;
+}
+.fs-18{
+    
+    font-size: 18px;
+}
+
+.btn-send:hover{
+    color: white;
+    background-color: var(--bs-dark);
+}

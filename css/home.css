@@ -1,0 +1,84 @@
+*{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+:root{
+    --bg-yellow:#ffcb05;
+    --bg-blue:#00678f;
+}
+.bg-blue{
+    background-color: var(--bg-blue);
+}
+.bg-yellow{
+    background-color: var(--bg-yellow);
+}
+.fw{
+   font-weight: 600; 
+}
+.nav-link{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.bg-eee{
+    background-color: #eee;
+}
+.login{
+    top:100%;
+    left: 3rem;
+    border: 1px solid var(--bg-blue);
+    animation-name: HideLogin;
+    animation-fill-mode: forwards;
+    animation-duration: 0s;
+}
+
+.btn-yellow:hover{
+    border:1px solid white;
+}
+
+.slider{
+    width: 100%;
+    height: auto;
+   
+}
+.slider-img{
+    width: 100%;
+    height: 27vw;
+    background-image: url('../images/webradio.jpg') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: ChangeImage;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+
+.fs-3em{
+    font-size: 3em;
+}
+
+@keyframes ChangeImage {
+     33% {
+        background-image: url('../images/DigitalUSSDweb.jpg');
+    }
+    66%{
+        background-image: url('../images/ElMillionaire.png');
+    }
+    100%{
+        background-image: url('../images/webradio.jpg') ;
+    }
+    
+}
+
+@keyframes ShowLogin {
+    to{
+        visibility: visible;
+    }
+}
+
+@keyframes HideLogin {
+    to{
+        visibility: hidden;
+    }
+}
